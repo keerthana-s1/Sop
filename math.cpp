@@ -1,6 +1,9 @@
 #include <iostream>
 #include <bits/stdc++.h>
 using namespace std;
+//We try to find out the value of the factorial in terms of product of powers of prime.
+//the number of divisors is the product of powers+1 of each prime number by combinations.
+//and finally print the ans mod 1000000007
 long long prim(long long a)
 {
     long long i,flag=0;
@@ -35,13 +38,13 @@ int main()
                 { coun+=temp/i;
                   temp/=i;
                 }
-                fact*=((coun+1)%1000000000);
-                fact=fact%1000000000;
+                fact*=((coun+1)%1000000007);
+                fact=fact%1000000007;
                 cout<<fact<<endl;
             }
         }
         t--;
-        cout<<fact%1000000000<<endl;
+        cout<<fact%1000000007<<endl;
         //cout<<p<<endl;
         }
     }
