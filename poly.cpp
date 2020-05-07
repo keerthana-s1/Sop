@@ -2,6 +2,7 @@
 #include<math.h>
 #include <bits/stdc++.h>
 using namespace std;
+//Using brute force method, we try all values in the range till we find the root;
 int main()
 {
     int t;
